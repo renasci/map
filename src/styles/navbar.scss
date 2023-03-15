@@ -1,0 +1,19 @@
+.navBar {
+  min-height: 1.4rem;
+
+  @media (max-width: $small) {
+    font-size: 0.7rem;
+  }
+
+  &__link {
+    pointer-events: auto;
+    cursor: pointer;
+    color: #363be5;
+
+    &_disabled {
+      color: #b8dad8;
+      pointer-events: none;
+      cursor: pointer;
+    }
+  }
+}

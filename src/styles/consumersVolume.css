@@ -1,0 +1,13 @@
+.comsumers-volume {
+  background-color: red;
+  border: 1px solid black;
+}
+.comsumers-volume__input {
+  display: none;
+}
+.comsumers-volume__label {
+  border: 1px solid rgb(0, 117, 53);
+  height: 50px;
+  width: 50px;
+  display: block;
+}/*# sourceMappingURL=consumersVolume.css.map */

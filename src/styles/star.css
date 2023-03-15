@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.star {
+  display: inline-block;
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform-origin: 50% 65%;
+  margin: 0 2px;
+}
+.star::before {
+  content: "☆";
+}
+.star_active {
+  color: #f5a901;
+}
+.star_active::before {
+  content: "★";
+}/*# sourceMappingURL=star.css.map */

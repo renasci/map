@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+    <title>Map</title>
+  </head>
+  <body>
+    <div class="navBar">
+      <span class="navBar__text">Loading...</span>
+      <span class="navBar__link navBar__link_disabled"></span>
+    </div>
+    
+    <div id="map-conteiner">
+     
+      <img id="map" src="src/images/map.png">
+      
+      <div class="device-conteiner" data-consumerId = "1">
+        <div class="device_small" data-consumerId = "1" data-deviceVolume="1">
+          <img src="src/images/small.png" class="device__image">
+          <img src="src/images/small_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_medium" data-consumerId = "1" data-deviceVolume="2">
+          <img src="src/images/medium.png" class="device__image">
+          <img src="src/images/medium_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_large" data-consumerId = "1" data-deviceVolume="3">
+          <img src="src/images/large.png" class="device__image">
+          <img src="src/images/large_mask.png" class="device__mask">
+        </div>
+      </div>
+      
+      <div class="device-conteiner" data-consumerId = "2">
+        <div class="device_small" data-consumerId = "2" data-deviceVolume="1">
+          <img src="src/images/small.png" class="device__image">
+          <img src="src/images/small_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_medium" data-consumerId = "2" data-deviceVolume="2">
+          <img src="src/images/medium.png" class="device__image">
+          <img src="src/images/medium_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_large" data-consumerId = "2" data-deviceVolume="3">
+          <img src="src/images/large.png" class="device__image">
+          <img src="src/images/large_mask.png" class="device__mask">
+        </div>
+      </div>
+      
+      <div class="device-conteiner" data-consumerId = "3">
+        <div class="device_small" data-consumerId = "3" data-deviceVolume="1">
+          <img src="src/images/small.png" class="device__image">
+          <img src="src/images/small_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_medium" data-consumerId = "3" data-deviceVolume="2">
+          <img src="src/images/medium.png" class="device__image">
+          <img src="src/images/medium_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_large" data-consumerId = "3" data-deviceVolume="3">
+          <img src="src/images/large.png" class="device__image">
+          <img src="src/images/large_mask.png" class="device__mask">
+        </div>
+      </div>
+      
+      <div class="device-conteiner" data-consumerId = "4">
+        <div class="device_small" data-consumerId = "4" data-deviceVolume="1">
+          <img src="src/images/small.png" class="device__image">
+          <img src="src/images/small_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_medium" data-consumerId = "4" data-deviceVolume="2" >
+          <img src="src/images/medium.png" class="device__image">
+          <img src="src/images/medium_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_large" data-consumerId = "4" data-deviceVolume="3">
+          <img src="src/images/large.png" class="device__image">
+          <img src="src/images/large_mask.png" class="device__mask">
+        </div>
+      </div>
+      
+      <div class="device-conteiner" data-consumerId = "5">
+        <div class="device_small" data-consumerId = "5" data-deviceVolume="1">
+          <img src="src/images/small.png" class="device__image">
+          <img src="src/images/small_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_medium" data-consumerId = "5" data-deviceVolume="2">
+          <img src="src/images/medium.png" class="device__image">
+          <img src="src/images/medium_mask.png" class="device__mask">
+        </div>
+      
+        <div class="device_large" data-consumerId = "5" data-deviceVolume="3">
+          <img src="src/images/large.png" class="device__image">
+          <img src="src/images/large_mask.png" class="device__mask">
+        </div>
+      </div>
+
+      <form action="" id="select-consumers" name="select-consumers">
+        <div class="comsumers-volume" data-consumerId = "1">
+          <label for="North-America-large" class="comsumers-volume__label comsumers-volume__label_large"></label>
+          <label for="North-America-medium" class="comsumers-volume__label comsumers-volume__label_medium"></label>
+          <label for="North-America-small" class="comsumers-volume__label comsumers-volume__label_small"></label>
+  
+          <input type="radio" class="comsumers-volume__input" name="North-America" id="North-America-small" value="1">
+          <input type="radio" class="comsumers-volume__input" name="North-America" id="North-America-medium" value="2">
+          <input type="radio" class="comsumers-volume__input" name="North-America" id="North-America-large" value="3">
+        </div>
+  
+        <div class="comsumers-volume" data-consumerId = "2">
+          <label for="South-America-large" class="comsumers-volume__label comsumers-volume__label_large"></label>
+          <label for="South-America-medium" class="comsumers-volume__label comsumers-volume__label_medium"></label>
+          <label for="South-America-small" class="comsumers-volume__label comsumers-volume__label_small"></label>
+  
+          <input type="radio" class="comsumers-volume__input" name="South-America" id="South-America-small" value="1">
+          <input type="radio" class="comsumers-volume__input" name="South-America" id="South-America-medium" value="2">
+          <input type="radio" class="comsumers-volume__input" name="South-America" id="South-America-large" value="3">
+        </div>
+  
+        <div class="comsumers-volume" data-consumerId = "3">
+          <label for="Europe-large" class="comsumers-volume__label comsumers-volume__label_large"></label>
+          <label for="Europe-medium" class="comsumers-volume__label comsumers-volume__label_medium"></label>
+          <label for="Europe-small" class="comsumers-volume__label comsumers-volume__label_small"></label>
+  
+          <input type="radio" class="comsumers-volume__input" name="Europe" id="Europe-small" value="1">
+          <input type="radio" class="comsumers-volume__input" name="Europe" id="Europe-medium" value="2">
+          <input type="radio" class="comsumers-volume__input" name="Europe" id="Europe-large" value="3">
+        </div>
+
+        <div class="comsumers-volume" data-consumerId = "4">
+          <label for="Asia-large" class="comsumers-volume__label comsumers-volume__label_large"></label>
+          <label for="Asia-medium" class="comsumers-volume__label comsumers-volume__label_medium"></label>
+          <label for="Asia-small" class="comsumers-volume__label comsumers-volume__label_small"></label>
+  
+          <input type="radio" class="comsumers-volume__input" name="Asia" id="Asia-small" value="1">
+          <input type="radio" class="comsumers-volume__input" name="Asia" id="Asia-medium" value="2">
+          <input type="radio" class="comsumers-volume__input" name="Asia" id="Asia-large" value="3">
+        </div>
+
+        <div class="comsumers-volume" data-consumerId = "5">
+          <label for="Oceania-large" class="comsumers-volume__label comsumers-volume__label_large"></label>
+          <label for="Oceania-medium" class="comsumers-volume__label comsumers-volume__label_medium"></label>
+          <label for="Oceania-small" class="comsumers-volume__label comsumers-volume__label_small"></label>
+  
+          <input type="radio" class="comsumers-volume__input" name="Oceania" id="Oceania-small" value="1">
+          <input type="radio" class="comsumers-volume__input" name="Oceania" id="Oceania-medium" value="2">
+          <input type="radio" class="comsumers-volume__input" name="Oceania" id="Oceania-large" value="3">
+        </div>
+      </form>
+
+      <form action="" name="select-providers">
+        <div class="provider" data-providerId="1">
+          <input type="checkbox" class="provider__input" id="provider-1" data-providerId="1">
+          <label for="provider-1" class="provider__label" data-providerId="1"></label>
+        </div>
+
+        <div class="provider" data-providerId="2">
+          <input type="checkbox" class="provider__input" id="provider-2" data-providerId="2">
+          <label for="provider-2" class="provider__label" data-providerId="2"></label>
+        </div>
+
+        <div class="provider" data-providerId="3">
+          <input type="checkbox" class="provider__input" id="provider-3" data-providerId="3">
+          <label for="provider-3" class="provider__label" data-providerId="3"></label>
+        </div>
+
+        <div class="provider" data-providerId="4">
+          <input type="checkbox" class="provider__input" id="provider-4" data-providerId="4">
+          <label for="provider-4" class="provider__label" data-providerId="4"></label>
+        </div>
+      </form>
+      
+      <div class="server" data-providerId="1"></div>
+      <div class="server" data-providerId="2"></div>
+      <div class="server" data-providerId="3"></div>
+      <div class="server" data-providerId="4"></div>
+
+      <div class="output" data-consumerId="1"></div>
+      <div class="output" data-consumerId="2"></div>
+      <div class="output" data-consumerId="3"></div>
+      <div class="output" data-consumerId="4"></div>
+      <div class="output" data-consumerId="5"></div>
+
+      <div class="blur"></div>
+      <div class="table-conteiner"></div>
+
+      <img class="line" src="src\images\arc_singapore_asia_large.png" data-providerId="4" data-consumerId="4" data-volume="3" >
+      <img class="line" src="src\images\arc_singapore_asia_medium.png" data-providerId="4" data-consumerId="4" data-volume="2" >
+      <img class="line" src="src\images\arc_singapore_asia_small.png" data-providerId="4" data-consumerId="4" data-volume="1" >
+      <img class="line" src="src\images\arc_singapore_europe_large.png" data-providerId="4" data-consumerId="3" data-volume="3" >
+      <img class="line" src="src\images\arc_singapore_europe_medium.png" data-providerId="4" data-consumerId="3" data-volume="2" >
+      <img class="line" src="src\images\arc_singapore_europe_small.png" data-providerId="4" data-consumerId="3" data-volume="1" >
+      <img class="line" src="src\images\arc_singapore_north-america_large.png" data-providerId="4" data-consumerId="1" data-volume="3" >
+      <img class="line" src="src\images\arc_singapore_north-america_medium.png" data-providerId="4" data-consumerId="1" data-volume="2" >
+      <img class="line" src="src\images\arc_singapore_north-america_small.png" data-providerId="4" data-consumerId="1" data-volume="1" >
+      <img class="line" src="src\images\arc_singapore_oceania_large.png" data-providerId="4" data-consumerId="5" data-volume="3" >
+      <img class="line" src="src\images\arc_singapore_oceania_medium.png" data-providerId="4" data-consumerId="5" data-volume="2" >
+      <img class="line" src="src\images\arc_singapore_oceania_small.png" data-providerId="4" data-consumerId="5" data-volume="1" >
+      <img class="line" src="src\images\arc_singapore_south-america_large.png" data-providerId="4" data-consumerId="2" data-volume="3" >
+      <img class="line" src="src\images\arc_singapore_south-america_medium.png" data-providerId="4" data-consumerId="2" data-volume="2" >
+      <img class="line" src="src\images\arc_singapore_south-america_small.png" data-providerId="4" data-consumerId="2" data-volume="1" >
+      <img class="line" src="src\images\arc_west-usa_asia_large.png" data-providerId="1" data-consumerId="4" data-volume="3" >
+      <img class="line" src="src\images\arc_west-usa_asia_medium.png" data-providerId="1" data-consumerId="4" data-volume="2" >
+      <img class="line" src="src\images\arc_west-usa_asia_small.png" data-providerId="1" data-consumerId="4" data-volume="1" >
+      <img class="line" src="src\images\arc_west-usa_europe_large.png" data-providerId="1" data-consumerId="3" data-volume="3" >
+      <img class="line" src="src\images\arc_west-usa_europe_medium.png" data-providerId="1" data-consumerId="3" data-volume="2" >
+      <img class="line" src="src\images\arc_west-usa_europe_small.png" data-providerId="1" data-consumerId="3" data-volume="1" >
+      <img class="line" src="src\images\arc_west-usa_north-america_large.png" data-providerId="1" data-consumerId="1" data-volume="3" >
+      <img class="line" src="src\images\arc_west-usa_north-america_medium.png" data-providerId="1" data-consumerId="1" data-volume="2" >
+      <img class="line" src="src\images\arc_west-usa_north-america_small.png" data-providerId="1" data-consumerId="1" data-volume="1" >
+      <img class="line" src="src\images\arc_west-usa_oceania_large.png" data-providerId="1" data-consumerId="5" data-volume="3" >
+      <img class="line" src="src\images\arc_west-usa_oceania_medium.png" data-providerId="1" data-consumerId="5" data-volume="2" >
+      <img class="line" src="src\images\arc_west-usa_oceania_small.png" data-providerId="1" data-consumerId="5" data-volume="1" >
+      <img class="line" src="src\images\arc_west-usa_south-america_large.png" data-providerId="1" data-consumerId="2" data-volume="3" >
+      <img class="line" src="src\images\arc_west-usa_south-america_medium.png" data-providerId="1" data-consumerId="2" data-volume="2" >
+      <img class="line" src="src\images\arc_west-usa_south-america_small.png" data-providerId="1" data-consumerId="2" data-volume="1" >
+      <img class="line" src="src\images\arc_east-usa_asia_large.png" data-providerId="2" data-consumerId="4" data-volume="3" >
+      <img class="line" src="src\images\arc_east-usa_asia_medium.png" data-providerId="2" data-consumerId="4" data-volume="2" >
+      <img class="line" src="src\images\arc_east-usa_asia_small.png" data-providerId="2" data-consumerId="4" data-volume="1" >
+      <img class="line" src="src\images\arc_east-usa_europe_large.png" data-providerId="2" data-consumerId="3" data-volume="3" >
+      <img class="line" src="src\images\arc_east-usa_europe_medium.png" data-providerId="2" data-consumerId="3" data-volume="2" >
+      <img class="line" src="src\images\arc_east-usa_europe_small.png" data-providerId="2" data-consumerId="3" data-volume="1" >
+      <img class="line" src="src\images\arc_east-usa_north-america_large.png" data-providerId="2" data-consumerId="1" data-volume="3" >
+      <img class="line" src="src\images\arc_east-usa_north-america_medium.png" data-providerId="2" data-consumerId="1" data-volume="2" >
+      <img class="line" src="src\images\arc_east-usa_north-america_small.png" data-providerId="2" data-consumerId="1" data-volume="1" >
+      <img class="line" src="src\images\arc_east-usa_oceania_large.png" data-providerId="2" data-consumerId="5" data-volume="3" >
+      <img class="line" src="src\images\arc_east-usa_oceania_medium.png" data-providerId="2" data-consumerId="5" data-volume="2" >
+      <img class="line" src="src\images\arc_east-usa_oceania_small.png" data-providerId="2" data-consumerId="5" data-volume="1" >
+      <img class="line" src="src\images\arc_east-usa_south-america_large.png" data-providerId="2" data-consumerId="2" data-volume="3" >
+      <img class="line" src="src\images\arc_east-usa_south-america_medium.png" data-providerId="2" data-consumerId="2" data-volume="2" >
+      <img class="line" src="src\images\arc_east-usa_south-america_small.png" data-providerId="2" data-consumerId="2" data-volume="1" >
+      <img class="line" src="src\images\arc_germany_asia_large.png" data-providerId="3" data-consumerId="4" data-volume="3" >
+      <img class="line" src="src\images\arc_germany_asia_medium.png" data-providerId="3" data-consumerId="4" data-volume="2" >
+      <img class="line" src="src\images\arc_germany_asia_small.png" data-providerId="3" data-consumerId="4" data-volume="1" >
+      <img class="line" src="src\images\arc_germany_europe_large.png" data-providerId="3" data-consumerId="3" data-volume="3" >
+      <img class="line" src="src\images\arc_germany_europe_medium.png" data-providerId="3" data-consumerId="3" data-volume="2" >
+      <img class="line" src="src\images\arc_germany_europe_small.png" data-providerId="3" data-consumerId="3" data-volume="1" >
+      <img class="line" src="src\images\arc_germany_north-america_large.png" data-providerId="3" data-consumerId="1" data-volume="3" >
+      <img class="line" src="src\images\arc_germany_north-america_medium.png" data-providerId="3" data-consumerId="1" data-volume="2" >
+      <img class="line" src="src\images\arc_germany_north-america_small.png" data-providerId="3" data-consumerId="1" data-volume="1" >
+      <img class="line" src="src\images\arc_germany_oceania_large.png" data-providerId="3" data-consumerId="5" data-volume="3" >
+      <img class="line" src="src\images\arc_germany_oceania_medium.png" data-providerId="3" data-consumerId="5" data-volume="2" >
+      <img class="line" src="src\images\arc_germany_oceania_small.png" data-providerId="3" data-consumerId="5" data-volume="1" >
+      <img class="line" src="src\images\arc_germany_south-america_large.png" data-providerId="3" data-consumerId="2" data-volume="3" >
+      <img class="line" src="src\images\arc_germany_south-america_medium.png" data-providerId="3" data-consumerId="2" data-volume="2" >
+      <img class="line" src="src\images\arc_germany_south-america_small.png" data-providerId="3" data-consumerId="2" data-volume="1" >
+    </div>
+  </body>
+</html>
+
+

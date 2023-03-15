@@ -1,0 +1,90 @@
+.comsumers-volume {
+  position: absolute;
+  height: 9.72223%;
+  width: 5.46875%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+
+  &[data-consumerId="1"] {
+    top: 41%;
+    left: 22.5%;
+  }
+
+  &[data-consumerId="2"] {
+    top: 70.2%;
+    left: 32.5%;
+  }
+
+  &[data-consumerId="3"] {
+    top: 39.0%;
+    left: 52.3%;
+  }
+
+  &[data-consumerId="4"] {
+    top: 50.5%;
+    left: 74.8%;
+  }
+
+  &[data-consumerId="5"] {
+    top: 77%;
+    left: 83.5%;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    background-image: url(src/images/man_empty.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    margin: 1px;
+
+    &_small {
+      height: 37%;
+      flex-basis: 20%;
+
+      &:hover {
+        background-image: url(src/images/man_filled.png);
+      }
+
+      &:hover~label {
+        background-image: url(src/images/man_filled.png);
+      }
+    }
+
+    &_medium {
+      height: 64%;
+      flex-basis: 30%;
+
+      &:hover {
+        background-image: url(src/images/man_filled.png);
+      }
+
+      &:hover~label {
+        background-image: url(src/images/man_filled.png);
+      }
+    }
+
+    &_large {
+      height: 100%;
+      flex-basis: 50%;
+
+      &:hover {
+        background-image: url(src/images/man_filled.png);
+      }
+
+      &:hover~label {
+        background-image: url(src/images/man_filled.png);
+      }
+    }
+  }
+}

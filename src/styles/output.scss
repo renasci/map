@@ -1,0 +1,34 @@
+.output {
+  z-index: 2;
+  position: absolute;
+  text-shadow: 0 1px 1px #ffffff, 0 -1px 1px #ffffff, 1px 0 1px #ffffff, -1px 0 1px #ffffff;
+
+  @media (max-width: $small) {
+    font-size: 0.7rem;
+  }
+
+  &[data-consumerId="1"] {
+    top: 43%;
+    left: 20%;
+  }
+
+  &[data-consumerId="2"] {
+    top: 60%;
+    left: 28%;
+  }
+
+  &[data-consumerId="3"] {
+    top: 40.5%;
+    left: 55%;
+  }
+
+  &[data-consumerId="4"] {
+    top: 41.5%;
+    left: 81%;
+  }
+
+  &[data-consumerId="5"] {
+    top: 70%;
+    left: 83.5%;
+  }
+}

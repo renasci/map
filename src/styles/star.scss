@@ -1,0 +1,22 @@
+.star {
+  display: inline-block;
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform-origin: 50% 65%;
+  margin: 0 2px;
+
+  &::before {
+    content: "\2606"
+  }
+
+  &_active {
+    color: #f5a901;
+
+    &::before {
+      content: "\2605"
+    }
+  }
+}

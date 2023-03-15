@@ -1,0 +1,160 @@
+.device-conteiner {
+  visibility: hidden;
+}
+  
+.device {
+  &_small {
+      width: 2.96875%;
+
+      & img {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      }
+
+      &[data-consumerId="1"] {
+      position: absolute;
+      top: 41%;
+      left: 25.5%;
+      }
+
+      &[data-consumerId="2"] {
+      position: absolute;
+      top: 71.7%;
+      left: 34.7%;
+      }
+
+      &[data-consumerId="3"] {
+      position: absolute;
+      top: 40%;
+      left: 53.5%;
+      }
+
+      &[data-consumerId="4"] {
+      position: absolute;
+      top: 51.5%;
+      left: 77.5%;
+      }
+
+      &[data-consumerId="5"] {
+      position: absolute;
+      top: 79.8%;
+      left: 87.1%;
+      }
+  }
+
+  &_medium {
+      width: 2.96875%;
+
+      & img {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      }
+
+      &[data-consumerId="1"] {
+      position: absolute;
+      top: 45.8%;
+      left: 21.5%;
+      }
+
+      &[data-consumerId="2"] {
+      position: absolute;
+      top: 79%;
+      left: 32.5%;
+      }
+
+      &[data-consumerId="3"] {
+      position: absolute;
+      top: 45.5%;
+      left: 46.4%;
+      }
+
+      &[data-consumerId="4"] {
+      position: absolute;
+      top: 55.5%;
+      left: 68.4%;
+      }
+
+      &[data-consumerId="5"] {
+      position: absolute;
+      top: 79%;
+      left: 83.5%;
+      }
+
+      &[data-consumerId="5"] {
+      position: absolute;
+      top: 79%;
+      left: 79.5%;
+      }
+  }
+
+  &_large {
+      width: 2.96875%;
+
+      & img {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      }
+
+      &[data-consumerId="1"] {
+      position: absolute;
+      top: 43%;
+      left: 17.6%;
+      }
+
+      &[data-consumerId="2"] {
+      position: absolute;
+      top: 68%;
+      left: 29.5%;
+      }
+
+      &[data-consumerId="3"] {
+      position: absolute;
+      top: 36.5%;
+      left: 59.4%;
+      }
+
+      &[data-consumerId="4"] {
+      position: absolute;
+      top: 43%;
+      left: 81.4%;
+      }
+
+      &[data-consumerId="5"] {
+      position: absolute;
+      top: 79%;
+      left: 83.5%;
+      }
+
+  }
+
+  &__mask {
+      filter: invert(11%) sepia(98%) saturate(4161%) hue-rotate(236deg) brightness(113%) contrast(123%);
+      clip-path: inset(0 100% 0 0);
+
+      &_active {
+      clip-path: inset(0);
+      transition-property: clip-path;
+      transition-timing-function: linear;
+      transition-duration: 25s;
+
+      }
+  }
+}

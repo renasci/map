@@ -1,0 +1,45 @@
+.provider {
+  visibility: hidden;
+
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    position: absolute;
+    background-image: url(src/images/circle_empty.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3.125%;
+    height: 5.55556%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    &:hover {
+      background-image: url(src/images/circle_filled.png);
+    }
+
+    &[data-providerId="1"] {
+      top: 45.8%;
+      left: 14.8%;
+    }
+
+    &[data-providerId="2"] {
+      top: 44%;
+      left: 29.5%;
+    }
+
+    &[data-providerId="3"] {
+      top: 40.6%;
+      left: 49.8%;
+    }
+
+    &[data-providerId="4"] {
+      top: 69.3%;
+      left: 76.5%;
+    }
+  }
+}
